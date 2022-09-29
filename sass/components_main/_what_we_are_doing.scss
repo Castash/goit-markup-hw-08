@@ -1,0 +1,24 @@
+/* <!-- C H I M  M I Z A U M A E M O S  --> */
+
+.what-we-are-doing__item {
+    position: relative;
+}
+
+.what-we-are-doing__overlay {
+    position: absolute;
+    left: 0;
+    top: 75%;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    color: var(--white-main-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    line-height: 100%;
+    align-items: center;
+    justify-content: center;
+}

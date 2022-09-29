@@ -1,0 +1,34 @@
+/* всі контейнери width: 1170px; */
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: baseline;
+    gap: 94px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section1p {
+    padding-bottom: 94px;
+}
+.container1 {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+/* всі контейнери width: 1600px; */
+.wide {
+    max-width: 1630px;
+}
+.padding-top-0 {
+    padding-top: 0px;
+}

@@ -1,0 +1,206 @@
+/* ------MODAL-FORM------- */
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 580px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: background-color var(--transition-dur-func);
+}
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.modal__container {
+    height: 100%;
+    padding: 40px;
+}
+/* заголовок модалки */
+.modal__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: var(--h2-h3-text-color);
+    padding-bottom: 16px;
+    text-align: center;
+}
+.modal__field:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+.modal__field-title {
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
+    color: var(--color-link);
+}
+
+.modal__input-field {
+    display: block;
+    position: relative;
+    height: 40px;
+}
+/* опис класу вводу данних */
+.modal__input {
+    width: 100%;
+    border: 1px solid var(--border-form);
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 42px;
+    color: #000;
+    transition: border var(--transition-dur-func);
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--border-form);
+    }
+    &:focus + .modal-form-input-icon {
+        fill: var(--logo-color);
+    }
+    &:focus {
+        border: 1px solid var(--logo-color);
+    }
+}
+
+/* клас для іконок */
+.modal__icon {
+    position: absolute;
+    top: 0%;
+    left: 15px;
+    transform: translate(-16%, 112%);
+    transition: var(--transition-dur-func);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.modal__field-title {
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
+    color: var(--color-link);
+}
+
+.modal__comment {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--border-form);
+    outline: none;
+    color: var(--textariya-color-next);
+    border-radius: 4px;
+    font-family: "Roboto";
+    padding: 16px 12px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    transition: border-color var(--transition-dur-func);
+    &:focus {
+        border: 1px solid var(--logo-color);
+    }
+}
+
+.modal__descr {
+    border: 1px solid var(--border-form);
+    outline: none;
+    &:focus {
+        border: var(--logo-color);
+    }
+}
+
+.modal__descr-chek {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    color: var(--color-link);
+    letter-spacing: 0.4px;
+    justify-content: center;
+    &::before {
+        margin-right: 9px;
+        content: "";
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 2px solid var(--h2-h3-text-color);
+        cursor: pointer;
+        border-radius: 4px;
+    }
+}
+
+.modal__descr:checked + .modal__descr-chek::before {
+    background-color: var(--logo-color);
+    border: none;
+    background-image: url(../img/galochka.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* класс для посилання умови договору */
+.modal__conditions {
+    color: var(--logo-color);
+    text-decoration: underline;
+    margin-left: 4px;
+}
+// f o o t e r //
+
+.footer__form {
+    display: flex;
+}
+.footer__input-main {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    padding-left: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--back-ground-color);
+    font-size: 16px;
+}
+
+.footer__input-portfolio {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--back-ground-color);
+    font-size: 16px;
+    width: 343px;
+    height: 46px;
+}

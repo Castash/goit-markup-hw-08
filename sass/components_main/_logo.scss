@@ -1,0 +1,21 @@
+// LOGO
+.header__logo {
+    color: var(--logo-color);
+    font-weight: bold;
+    font-size: 26px;
+    font-family: "Raleway";
+    line-height: 190.75%;
+    margin-right: 43px;
+    transition: color var(--transition-dur-func);
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
+    & > span {
+        color: var(--primary-text-color);
+    }
+}
+// .footer__logo {
+//     color: var(--logo-color);
+//     font-family: "Raleway";
+// }

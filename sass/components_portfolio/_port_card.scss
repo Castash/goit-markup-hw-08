@@ -1,0 +1,74 @@
+/* клас розміщення карток */
+.main-portfolio__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.main-portfolio__cardmain {
+    border: solid 1px#eeeeee;
+    position: relative;
+    overflow: hidden;
+    &:focus,
+    &:hover {
+        transition: color var(--transition-dur-func);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.main-portfolio__link-wrapper {
+    position: relative;
+    overflow: hidden;
+    &:hover .main-portfolio__overlay,
+    &:focus .main-portfolio__overlay {
+        transform: translate(0, 0);
+    }
+}
+
+.main-portfolio__img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-portfolio__overlay {
+    position: absolute;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 63px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: var(--white-main-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translate(0, 140%);
+    transition: transform 500ms linear;
+}
+
+.main-portfolio__description {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+}
+.main-portfolio__subtitle {
+    font-family: "Roboto";
+    color: var(--h2-h3-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+/* опис постерів */
+.main-portfolio__paragraph {
+    color: var(--color-link);
+    font-size: 16px;
+    line-height: 187.5%;
+    text-align: left;
+}
