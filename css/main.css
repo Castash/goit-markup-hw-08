@@ -1380,6 +1380,11 @@ lmlml
   border: none;
   background-color: transparent;
   fill: var(--h2-h3-text-color);
+  -webkit-transition: fill var(--transition-dur-func);
+  transition: fill var(--transition-dur-func);
+}
+.button-menu:focus, .button-menu:hover {
+  fill: var(--logo-color);
 }
 @media screen and (min-width: 768px) {
   .button-menu {
