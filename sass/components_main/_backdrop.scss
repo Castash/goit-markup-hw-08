@@ -6,6 +6,7 @@
     left: 0%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: background-color var(--transition-dur-func);
+    overflow: scroll;
     &.is-hidden {
         visibility: visible;
         opacity: 0;

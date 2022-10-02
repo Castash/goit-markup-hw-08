@@ -1,9 +1,15 @@
-.body {
+body {
     color: var(--primary-text-color);
-    font-family: "Roboto";
+    font-family: 'Roboto';
     height: 100%;
     margin: 0px;
     padding: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*--------- GENERAL-------=====-- */
@@ -35,7 +41,15 @@
 //  <!--not_together універсальний клас для задання gap  -->
 .not-together {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
+    align-items: center;
+
+    @media screen and(min-width:480px) {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 .p-mainpage {
     display: -webkit-box;
@@ -59,10 +73,15 @@
     justify-content: center;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: calc(33 / 28);
     letter-spacing: 0.03em;
     color: var(--h2-h3-text-color);
+
+    @media screen and(min-width:1200px) {
+        font-size: 36px;
+        line-height: calc(42 / 36);
+    }
 }
 .h3main-page {
     color: var(--h2-h3-text-color);
@@ -72,9 +91,6 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-bottom: 10px;
     margin-top: 30px;
 }

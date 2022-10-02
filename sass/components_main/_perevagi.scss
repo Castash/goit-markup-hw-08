@@ -2,14 +2,33 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
     gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    @media screen and(min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 /* загальний клас для розміщення переваг */
 
 .benefits__item {
-    width: 270px;
+    width: 100%;
     height: 224px;
+    text-align: center;
+
+    @media screen and(min-width:480px) {
+        width: 450px;
+    }
+    @media screen and(min-width: 768px) {
+        text-align: start;
+        width: 354px;
+    }
+    @media screen and(min-width:1200px) {
+        width: 270px;
+    }
 }
 
 .benefits__svg {
@@ -22,7 +41,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 270px;
+    // width: 100%;
     height: 120px;
     background-color: #f5f4fa;
 }
